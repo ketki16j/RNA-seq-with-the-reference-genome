@@ -14,7 +14,9 @@ For this next step, you will first need to download the reference genome and ann
 
 Phytozome – Glycine max
 Now that you have the genome and annotation files, you will create a genome index using the following script:
+
 STAR --runMode genomeGenerate --genomeDir /common/RNASeq_Workshop/Soybean/gmax_genome/ --genomeFastaFiles /common/RNASeq_Workshop/Soybean/gmax_genome/Gmax_275_v2 --sjdbGTFfile /common/RNASeq_Workshop/Soybean/gmax_genome/Gmax_275_Wm82.a2.v1.gene_exons --sjdbGTFtagExonParentTranscript Parent --sjdbOverhang 100 --runThreadN 8
+
 The assembly file, annotation file, as well as all of the files created from indexing the genome can be found in ~/datasets
 4. Mapping trimmed reads:
 Now that you have your genome indexed, you can begin mapping your trimmed reads with the following script:The script for mapping all six of our trimmed reads to .bam files can be found in mapped.sh
