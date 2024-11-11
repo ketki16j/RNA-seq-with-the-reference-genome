@@ -36,3 +36,5 @@ The R DESeq2 library also must be installed. To install this package, start the 
 
 ```biocLite("DESeq2")```
 
+The R code Deseq_analysis.R do DeSeq2 analysis to get normalize gene count and generate “-replaceoutliers-results.csv” which has adjusted and normal p-values, as well as log2foldchange for all of the genes.
+
