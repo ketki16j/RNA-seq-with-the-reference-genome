@@ -45,3 +45,16 @@ The plots includes:
  3) variance stabilization plot
  4) heatmap of clustering analysis
  5) PCA plot
+
+The .csv output file that you get from this R code should look something like this:
+
+
+
+Below are some examples of the types of plots you can generate from RNAseq data using DESeq2:
+
+
+ 
+
+7. Merging Data and Using Biomart:
+
+To continue with analysis, we can use the .csv files we generated from the DeSEQ2 analysis and find gene ontology. This next script Biomart.R contains the actual biomaRt calls, and uses the .csv files to search through the Phytozome database. If you are trying to search through other datsets, simply replace the “useMart()”  command with the dataset of your choice. Again, the biomaRt call is relatively simple, and this script is customizable in which values you want to use and retrieve.
