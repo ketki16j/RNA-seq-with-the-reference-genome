@@ -33,5 +33,6 @@ For the remaining steps, you can either run the analysis on R in computer or ser
 The R DESeq2 library also must be installed. To install this package, start the R console and enter:
 
 ```source("http://bioconductor.org/biocLite.R")```
+
 ```biocLite("DESeq2")```
 
