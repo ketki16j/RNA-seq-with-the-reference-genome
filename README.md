@@ -48,7 +48,7 @@ The plots includes:
 
 The .csv output file that you get from this R code should look something like this:
 
-
+![alt text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Screen-Shot-2015-07-13-at-1.11.41-PM.png)
 
 Below are some examples of the types of plots you can generate from RNAseq data using DESeq2:
 
