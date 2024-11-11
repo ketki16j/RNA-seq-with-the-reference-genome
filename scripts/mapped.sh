@@ -7,7 +7,7 @@
 #SBATCH --partition=xeon
 #SBATCH --qos=general
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=first.last@uconn.edu
+#SBATCH --mail-user=first.last@utdallas.edu
 #SBATCH -o %x_%A_%a.out
 #SBATCH -e %x_%A_%a.err
 #SBATCH --array=[0-18]%5
