@@ -28,4 +28,4 @@ Now that you have your genome indexed, you can begin mapping your trimmed reads 
 ```htseq-count -s no -r pos —t exon -i pacid -f bam SRR391535Aligned.sortedByCoord.out.bam /common/RNASeq_Workshop/Soybean/gmax_genome/Gmax_275_Wm82.a2.v1.gene_exons > SRR391535-output_basename.counts```
 6. Analysis of Counts with DESeq2:
 
-For the remaining steps, you can either run the analysis on R in computer or server. You will also need to download R to run DESeq2, and I’d also recommend installing RStudio, which provides a graphical interface that makes working with R scripts much easier. They can be found here:
+For the remaining steps, you can either run the analysis on R in computer or server. You will also need to download R to run DESeq2, and I’d also recommend installing RStudio, which provides a graphical interface that makes working with R scripts much easier.
