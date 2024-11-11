@@ -20,6 +20,7 @@ STAR --runMode genomeGenerate --genomeDir /common/RNASeq_Workshop/Soybean/gmax_g
 ```
 
 The assembly file, annotation file, as well as all of the files created from indexing the genome can be found in ~/datasets
+
 4. Mapping trimmed reads:
 Now that you have your genome indexed, you can begin mapping your trimmed reads with the following script:The script for mapping all six of our trimmed reads to .bam files can be found in mapped.sh
 5. Convert BAM Files to Raw Counts with HTSeq: We will use HTSeq to transform these mapped reads into counts that we can analyze with R. “-s” indicates we do not have strand specific counts. “-r” indicates the order that the reads were generated, for us it was by alignment position. “-t” indicates the feature from the annotation file we will be using, which in our case will be exons. The script for generating the count file is htseq_count.sh
