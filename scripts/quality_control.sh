@@ -24,7 +24,7 @@ INDIR=trimmed_sequences
 REPORTDIR=fastqc_reports
 mkdir -p $REPORTDIR
 
-ACCLIST=../01_raw_data/accessionlist.txt
+ACCLIST=../scripts/accessionlist.txt
 # run fastp in parallel, 4 samples at a time
 cat $ACCLIST | parallel -j 4 \
     fastqc --outdir $REPORTDIR $INDIR/{}_trim_{1..2}.fastq.gz
