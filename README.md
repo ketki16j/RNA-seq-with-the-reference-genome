@@ -32,6 +32,6 @@ Now that you have your genome indexed, you can begin mapping your trimmed reads 
 For the remaining steps, you can either run the analysis on R in computer or server. You will also need to download R to run DESeq2, and I’d also recommend installing RStudio, which provides a graphical interface that makes working with R scripts much easier.
 The R DESeq2 library also must be installed. To install this package, start the R console and enter:
 
-```source("http://bioconductor.org/biocLite.R")
-biocLite("DESeq2")```
+```source("http://bioconductor.org/biocLite.R")```
+```biocLite("DESeq2")```
 
