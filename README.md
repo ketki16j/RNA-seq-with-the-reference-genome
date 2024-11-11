@@ -38,3 +38,10 @@ The R DESeq2 library also must be installed. To install this package, start the 
 
 The R code Deseq_analysis.R do DeSeq2 analysis to get normalize gene count and generate “-replaceoutliers-results.csv” which has adjusted and normal p-values, as well as log2foldchange for all of the genes.
 
+The R code visualization.R  do exploratory data analysis of RNAseq data with DESeq2 do a variety of visualization, QC and other plots to get a sense of what the RNAseq data looks like based on DESEq2 analysis
+The plots includes:
+# 1) MA plot
+# 2) rlog stabilization and variance stabiliazation
+# 3) variance stabilization plot
+# 4) heatmap of clustering analysis
+# 5) PCA plot
