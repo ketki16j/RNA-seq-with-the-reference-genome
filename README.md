@@ -51,10 +51,16 @@ The .csv output file that you get from this R code should look something like th
 ![alt text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Screen-Shot-2015-07-13-at-1.11.41-PM.png)
 
 Below are some examples of the types of plots you can generate from RNAseq data using DESeq2:
-
+![alt text](https://bioinformatics.media.uconn.edu/wp-content/uploads/sites/15/2015/07/Rplot-logfoldchange.png)
+![alt text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Gmax_DESeq2-Dispersion-plot.png)
+![alt text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Rplot-heatmap1.png)
+![alt text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Rplot-pca.png)
 
  
 
 7. Merging Data and Using Biomart:
 
 To continue with analysis, we can use the .csv files we generated from the DeSEQ2 analysis and find gene ontology. This next script Biomart.R contains the actual biomaRt calls, and uses the .csv files to search through the Phytozome database. If you are trying to search through other datsets, simply replace the “useMart()”  command with the dataset of your choice. Again, the biomaRt call is relatively simple, and this script is customizable in which values you want to use and retrieve.
+
+After fetching data from the Phytozome database based on the PAC transcript IDs of the genes in our samples, a .txt file is generated that should look something like this:
+![alt_text](https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2015/07/Screen-Shot-2015-07-20-at-6.54.17-PM.png)
