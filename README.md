@@ -1,12 +1,28 @@
 # RNA-seq-with-the-reference-genome
 
-This repository is a tutorial for differential expression analysis using RNA-Seq data
-We will use a subset of gene expression data from Reid et al. 2016, a study of evolutionary adaptation to industrial pollutants in the coastal fish Fundulus heteroclitus. The study consisted of an experimental exposure of embryonic fish from eight populations to the toxicant PCB-126. Here we will use exposed and control samples from two populations.
-The samples we will be using are described by the following accession numbers; SRR391535, SRR391536, SRR391537, SRR391538, SRR391539, and SRR391541.
+This repository provides a **tutorial for differential expression analysis using RNA-Seq data**.  
 
-We will be going through quality control of the reads, alignment of the reads to the reference genome, conversion of the files to raw counts, analysis of the counts with DeSeq2, and finally annotation of the reads using Biomart.
+We use a subset of gene expression data from **Reid et al. 2016**, a study of evolutionary adaptation to industrial pollutants in the coastal fish *Fundulus heteroclitus*. Here, we use exposed and control samples from two populations.
 
- #```1. The script for downloading .SRA files and converting them to fastq can be found in ~/scripts/fastq.sh```
+**Sample accession numbers:**  
+`SRR391535, SRR391536, SRR391537, SRR391538, SRR391539, SRR391541`
+
+This tutorial covers:  
+1. Quality control of reads  
+2. Alignment to the reference genome  
+3. Conversion of aligned reads to raw counts  
+4. Differential expression analysis using DESeq2  
+5. Gene annotation using BioMart  
+
+---
+
+## 1. Download SRA Files and Convert to Fastq
+
+The script for downloading `.SRA` files and converting them to `.fastq` can be found in:
+
+```bash
+~/scripts/fastq.sh
+
 
 #```2. Quality Control on the Reads Using Sickle```: Step one is to perform quality control on the reads using Sickle. We are using unpaired reads, as indicated by the “se” flag in the script quality_control.sh. The -f flag designates the input file, -o is the output file, -q is our minimum quality score and -l is the minimum read length.  The trimmed output files are what we will be using for the next steps of our analysis.
 
