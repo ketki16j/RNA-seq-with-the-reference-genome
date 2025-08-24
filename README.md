@@ -6,11 +6,11 @@ The samples we will be using are described by the following accession numbers; S
 
 We will be going through quality control of the reads, alignment of the reads to the reference genome, conversion of the files to raw counts, analysis of the counts with DeSeq2, and finally annotation of the reads using Biomart.
 
-```1. The script for downloading .SRA files and converting them to fastq can be found in ~/scripts/fastq.sh```
+ #```1. The script for downloading .SRA files and converting them to fastq can be found in ~/scripts/fastq.sh```
 
-```2. Quality Control on the Reads Using Sickle```: Step one is to perform quality control on the reads using Sickle. We are using unpaired reads, as indicated by the “se” flag in the script quality_control.sh. The -f flag designates the input file, -o is the output file, -q is our minimum quality score and -l is the minimum read length.  The trimmed output files are what we will be using for the next steps of our analysis.
+#```2. Quality Control on the Reads Using Sickle```: Step one is to perform quality control on the reads using Sickle. We are using unpaired reads, as indicated by the “se” flag in the script quality_control.sh. The -f flag designates the input file, -o is the output file, -q is our minimum quality score and -l is the minimum read length.  The trimmed output files are what we will be using for the next steps of our analysis.
 
-```3. Alignment of Trimmed Reads Using STAR:```
+#```3. Alignment of Trimmed Reads Using STAR:```
 
 For this next step, you will first need to download the reference genome and annotation file for Glycine max (soybean). The files I used can be found at the following link:
 
