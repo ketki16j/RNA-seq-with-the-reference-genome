@@ -30,9 +30,7 @@ Step one is to perform quality control on the reads using Sickle. We are using u
 
 ## 3. Alignment of Trimmed Reads Using STAR
 
-For this next step, you will first need to download the reference genome and annotation file for Glycine max (soybean). The files I used can be found at the following link:
-
-Phytozome – Glycine max
+For this next step, you will first need to download the reference genome and annotation file for Glycine max (soybean). 
 Now that you have the genome and annotation files, you will create a genome index using the following script:
 
 ``` bash
@@ -52,16 +50,16 @@ We will use HTSeq to transform these mapped reads into counts that we can analyz
 htseq-count -s no -r pos —t exon -i pacid -f bam SRR391535Aligned.sortedByCoord.out.bam /common/RNASeq_Workshop/Soybean/gmax_genome/Gmax_275_Wm82.a2.v1.gene_exons > SRR391535-output_basename.counts
 ```
 
-```6. Analysis of Counts with DESeq2```:
+## 6. Analysis of Counts with DESeq2
 
 For the remaining steps, you can either run the analysis on R in computer or server. You will also need to download R to run DESeq2, and I’d also recommend installing RStudio, which provides a graphical interface that makes working with R scripts much easier.
 The R DESeq2 library also must be installed. To install this package, start the R console and enter:
 
-```
+``` bash
 source("http://bioconductor.org/biocLite.R")
 ```
 
-```
+``` bash
 biocLite("DESeq2")
 ```
 
@@ -87,7 +85,7 @@ Below are some examples of the types of plots you can generate from RNAseq data 
 
  
 
-7. Merging Data and Using Biomart:
+## 7. Merging Data and Using Biomart
 
 To continue with analysis, we can use the .csv files we generated from the DeSEQ2 analysis and find gene ontology. This next script Biomart.R contains the actual biomaRt calls, and uses the .csv files to search through the Phytozome database. If you are trying to search through other datsets, simply replace the “useMart()”  command with the dataset of your choice. Again, the biomaRt call is relatively simple, and this script is customizable in which values you want to use and retrieve.
 
