@@ -22,7 +22,7 @@ The script for downloading `.SRA` files and converting them to `.fastq` can be f
 
 ```bash
 ~/scripts/fastq.sh
-
+```
 
 #```2. Quality Control on the Reads Using Sickle```: Step one is to perform quality control on the reads using Sickle. We are using unpaired reads, as indicated by the “se” flag in the script quality_control.sh. The -f flag designates the input file, -o is the output file, -q is our minimum quality score and -l is the minimum read length.  The trimmed output files are what we will be using for the next steps of our analysis.
 
